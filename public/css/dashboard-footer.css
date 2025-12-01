@@ -1,0 +1,69 @@
+/* dashboard-footer.css - Custom styles for the dashboard footer */
+.dashboard-footer {
+    background: #f7f9fc;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+.dashboard-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+}
+.dashboard-footer-section {
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 1rem;
+}
+.dashboard-footer-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+.dashboard-footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dashboard-footer-section ul li {
+    margin-bottom: 8px;
+}
+.dashboard-footer-section a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.dashboard-footer-section a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.dashboard-footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    background: #eef2f7;
+    color: #888;
+    font-size: 0.98rem;
+}
+.dashboard-footer-section .fab {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+.dashboard-footer-section .fab:hover {
+    color: #0056b3;
+}
+@media (max-width: 900px) {
+    .dashboard-footer-content {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .dashboard-footer-section {
+        min-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}

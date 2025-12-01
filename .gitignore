@@ -1,0 +1,11 @@
+﻿/vendor/
+/composer.lock.bak
+.phpunit.result.cache
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
+/app/public/uploads/*
+!/app/public/uploads/.gitkeep
+nul
