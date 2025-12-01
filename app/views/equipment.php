@@ -107,10 +107,8 @@ require APPROOT . '/views/inc/components/dashboard_shell_start.php';
                 <option value="all">All statuses</option>
                 <option value="operational">Operational</option>
                 <option value="maintenance">Maintenance</option>
-                <option value="assigned">Assigned</option>
-                <option value="out_of_service">Out of Service</option>
+                <option value="repair">Repair</option>
                 <option value="retired">Retired</option>
-                <option value="other">Other</option>
               </select>
             </div>
             <div class="chip-group">
