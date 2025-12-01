@@ -29,22 +29,22 @@
                 <div class="split-row">
                     <div class="form-group">
                         <label for="first_name">First name</label>
-                        <input type="text" name="first_name" id="first_name" class="form-input" placeholder="John" value="<?php echo htmlspecialchars($data['first_name'] ?? ''); ?>" required>
+                        <input type="text" name="first_name" id="first_name" class="form-input" placeholder="first_name" value="<?php echo htmlspecialchars($data['first_name'] ?? ''); ?>" required>
                     </div>
                     <div class="form-group">
                         <label for="last_name">Last name</label>
-                        <input type="text" name="last_name" id="last_name" class="form-input" placeholder="Doe" value="<?php echo htmlspecialchars($data['last_name'] ?? ''); ?>" required>
+                        <input type="text" name="last_name" id="last_name" class="form-input" placeholder="last_name" value="<?php echo htmlspecialchars($data['last_name'] ?? ''); ?>" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Work email</label>
-                    <input type="email" name="email" id="email" class="form-input" placeholder="john.doe@company.com" value="<?php echo htmlspecialchars($data['email'] ?? ''); ?>" autocomplete="email" required>
+                    <input type="email" name="email" id="email" class="form-input" placeholder="email" value="<?php echo htmlspecialchars($data['email'] ?? ''); ?>" autocomplete="email" required>
                 </div>
 
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" class="form-input" placeholder="johndoe" value="<?php echo htmlspecialchars($data['username'] ?? ''); ?>" autocomplete="username" required>
+                    <input type="text" name="username" id="username" class="form-input" placeholder="username" value="<?php echo htmlspecialchars($data['username'] ?? ''); ?>" autocomplete="username" required>
                 </div>
 
                 <div class="split-row">
