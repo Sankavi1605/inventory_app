@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    
+    # 1. Allow access to the test file if you need it
+    RewriteRule ^test_connection\.php$ - [L]
+
+    # 2. Send everything else to the public folder
+    # BUT only if it isn't already there! (Stops the loop)
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
