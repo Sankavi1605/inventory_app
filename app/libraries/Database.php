@@ -28,14 +28,7 @@ class Database
         } catch (PDOException $e) {
             $this->error = $e->getMessage();
             error_log('Database connection error: ' . $this->error);
-            if (defined('DEBUG_MODE') && DEBUG_MODE) {
-                echo '<div style="color:red; padding:10px; background:#fff3f3; border:1px solid #f00;">'
-                    . 'Database connection failed. Please check your configuration and database server.<br>'
-                    . htmlspecialchars($this->error) . '</div>';
-            } else {
-                echo '<div style="color:red; padding:10px; background:#fff3f3; border:1px solid #f00;">'
-                    . 'Unable to connect to the database. Please try again later.</div>';
-            }
+           die("Connection Error: " . $e->getMessage());
             exit;
         }
     }
